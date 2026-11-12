@@ -66,11 +66,90 @@
     <h2>Interactive Best-Practices Reference</h2>
     <ol>
         <li>
+            <details
             <summary>HTML Markup Structure & Nesting Guidelines</summary>
             <p>Always ensure tags are closed properly and nested logically  without visual overlapping. Never place block-level elements (such as div or p) inside inlinw elemments like span or a, Maintain lowercase tag names for consistency across build tools.</p>
-            
-</ul>
+            <details>
+        </li>
+        <li>
+            <details>
+            <summary>Image Accessibility & Text Alternatives</summary>
+            <p>Every non-decorative image element must include a descriptive alt attribute explaining the visual content. Descriptive images should use empty string attributes (alt="") to instruct screen readers to bypass them silently.</p>
+            </details>
+        </li>
+        <li>
+            <details>
+            <summary>Table Structuring Standards</summary>
+            <p>Avoid using HTML tables for page layouts. Reserve table elements strictly for tabular data, and always include explicit header cells(th)with scope ="col" or scope="row" attributes to facilities assistive device navigation.</p>
+            </details>
+        </li>
+    </ol>
         </section>
-        <summary></summary>
+        <hr>
+        <section>
+            <h2>Semantic Elements Comparison Matrix</h2>
+            <table>
+                <thread>
+                    <tr>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Display Mode</th>
+                        <th scope="col">Primary Function</th>
+                        <th scope="col">Accessibility Role</th>
+                        <th scope="col">HTML5 status</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr>
+                        <th scope="row">&lt;header&gt;</th>
+                        <td>Block</td>
+                        <td>Introductory content, site titles, logos or global navigation</td>
+                        <td>Banner landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;nav&gt;</th>
+                        <td>Block</td>
+                        <td> Major navigation blocks such as menus and table-of-contents links</td>
+                        <td>Navigation landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;main&gt;</th>
+                        <td>Block</td>
+                        <td>The main content unique to the page</td>
+                        <td>Main landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;article&gt;</th>
+                        <td>Block</td>
+                        <td>Self-contained content such as blog posts or news stories</td>
+                        <td>Article landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;section&gt;</th>
+                        <td>Block</td>
+                        <td>Highlight text for reference or relevance</td>
+                        <td>Generic inline text</td>
+                        <td>Standardized</td>
+                        </tr>
+                        </tbody>
+                        <tfooter>
+                            <tr>
+                                <td colspan="5">Summary: Semantic tags replace non-descriptive div containers for cleaner, more meaningful documents</td>
+                            </tr>
+                        </tfooter>
+                        </table>
+                        </section>
+                        <p><a href="page4.html">Proceed to Task 4: Complete Member Registration Form-></a></p>
+                        </main>
+                        <hr>
+                        <footer>
+                            <p>&copy; 2026 My Web Project. Page 3 of 4. </p>
+                        </footer>
+                    
+                </tbody>
+            </table>
     </main>
 </body>
