@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Member Registration</title>
+</head>
+<body>
+	<header>
+		<h1>Community Member Registration Portal</h1>
+		<nav>
+			<ul>
+				<li><a href="page1.html">Home</a></li>
+				<li><a href="page2.html">About Me</a></li>
+				<li><a href="page3.html">Markup Guide</a></li>
+				<li><a href="page4.html">Register</a></li>
+			</ul>
+		</nav>
+	</header>
+    <hr>
+    <main>
+        <h2>Create Your Account</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Section 1: Personal Profile Information</legend>
+                <label for="fullname">Full legal Name *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g., Jane Smith" required>
+                <small>Enter your first and last name as you would like them to appear on certificates.</small>
+                <label for="email">Primary Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="e.g., jane.smith@example.com" required>
+                <small>Your Verification link and security alerts will be sent here</small>
+                <label for="phone">Phone Number (Format: XXX-XXX-XXXX)</label>
+                <input type="tel" id="phone" name="phone" placeholder="e.g., 123-456-7890" required>
+                <small>Optional. Used solely for two-factor authentication(2FA).</small>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+                <label for="gender">Gender Identify</label>
+                <select id="gender" name="gender">
+                    <option value="other">Other</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="nonbinary">Non-binary</option>
+                    <option value="prefernot">Prefer not to say</option>
+                </select>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Section 2: Account Security & Plan Selection</legend>
+                <label for="username">Full Legal Name *</label>
+                <input type="text" id="username" name="username" placeholder="e.g., janesmith2026" required>
+
+                <label for="password">Account Password (Min 8 Characters) *</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+
+                <p>Select Membership Tier*</p>
+                <input type="radio" id="free" name="tier" value="free" checked required>
+                <label for="free">Community Tier Free Forever. Public forum & guided</label>
+                <input type ="radio" id="pro" name="tier" value="pro" required>
+                <label for="pro">Pro Tier - $12/month. Workshop recordings & code reviews.</label>
+                <input type="radio" id="enterprise" name="tier" value="enterprise" required>
+                <label for="enterprise">Enterprise Tier - $49/month 1-on-1 mentorship & team support.</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Section 3: Primary Occupation / Professional Role</legend>
+                <select> id="role" name="role" required>
+                    <option value="">Select your primary occupation</option>
+                    <option value="student">Student / Learner</option>
+                    <option value="developer">Web Developer / Programmer</option>
+                    <option value="designer">UI/UX Designer</option>
+                    <option value="manager">Project Manager / Team Lead</option>
+                    <option value="other">Other / Not Listed</option>
+                    
+
+                </select>
+                <p>Subscription & Email Updates</p>
+                 <input type="checkbox" id="newsletter" name="updates" value="newsletter" checked>
+                <label for="newsletter">Weekly Technical Newsletter (Curated HTML/CSS articles)</label>
+                <input type="checkbox" id="webinars" name="updates" value="webinars">
+                <label for="webinars">Upcoming Live Webinar Announcements &amp; Invites</label>
+                <input type="checkbox" id="releases" name="updates" value="releases">
+                <label for="releases">Product Release Notes &amp; Platform Security Updates</label><br>
+
+                <label for="bio">Short Bio / Learning Goals</label>
+                <textarea id="bio" name="bio" rows="3" cols="25" placeholder="Tell us briefly about your web development goals or interests"></textarea><br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I have read and agree to the <a href="#">Terms of Service</a> and Privacy Policy *</label>
+            </fieldset>
+            <aside>
+                <h3>Data Protection Notice</h3>
+                <p>Your personal information is collected only to create and manage your account. We do not sell or share your data with third parties, and you can request a copy of your data or ask for it to be deleted at any time.</p>
+            </aside>
+
+            <button type="submit">Submit Account Application</button>
+            <button type="reset">Clear Form Entries</button>
+        </form>
+        <p><a href="page1.html">Return to Home Landing Page (Page 1)</a> Step 4 of 4</p>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 My Web Project. Page 4 of 4
+            <footer>
+</body>
+</html>
