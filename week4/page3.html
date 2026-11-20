@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Markup & Semantic HTML Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png">
+        <h1>HTML5 Semantic Markup & Architecture Reference Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="page2.html">About Me</a></li>
+                <li><a href="page3.html">Markup Guide</a></li>
+                <li><a href="page4.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>Introduction to Semantic HTML Architecture</h2>
+            <p>Semantic HTML refers to the practice of writing markup that conveys the structural meaning and intent of web content rather than its aesthetic appearance. Using accurate HTML5 tags ensures that browsers, search engine crawlers, and screen readers can parse page content correctly. When you use semantic tags like article, section, and header, you create a structured Document Object Model(DOM) tree that enhance page navigation, search engine ranking(SEO), and screen reader accessibility without requiring heavy JavaScript logic.</p>
+        </section>
+        <hr>
+        <section>
+            <h2>Core Web Development Glossary</h2>
+            <dl>
+                <dt><strong>DOM (Document Object Model)</strong></dt>
+                <dd>A platform- and language-neutral interface that treats an XML or HTML document as a tree structure.</dd>
+                <dt><strong>Semantic HTML5</strong></dt>
+                <dd>The practice of using tags that accurately describe the purpose of the enclosed content.</dd>
+                <dt><strong>Accessibility & WAI-ARIA(ally)</strong></dt>
+                <dd>Accessibility Rich Internet Applications(ARIA) is a suite of attributes that define ways to make web content and applications more accessible to people with disabilities, especifically supplementing HTML where native semantics are insufficient.</dd>
+                <dt><strong>Progressive Enhancement</strong></dt>
+                <dd>A design strategy that emphasizes core webpage content first, allowing everyone to access basic content and functionallity, while delivering an enhanced experience to users with advanced browser capabilities or faster connectivity.</dd>
+                </dl>
+
+        </section>
+        <hr>
+        <section>
+            <h2>HTML5 Document Template Code Example</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;Accessible Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p> The code block illustrates a valid, accessible HTML5 document boilerplate containing metadata, structural sections, and fallback elements: </p>
+<ul>
+    <li>Doctype declaration</li>
+    <li>Language specified as English</li>
+    <li>Head metadata including charset UTF-8 and responsive viewport</li>
+    <li>Accessible page title</li>
+    <li>Skip-to-content navigation links</li>
+    <li>Main article with heading and content paragraph</li>
+    <li>Footer with copyright notice</li>
+</ul>
+    <section>
+     <hr>
+    </section>
+    <h2>Interactive Best-Practices Reference</h2>
+    <ol>
+        <li>
+            <details
+            <summary>HTML Markup Structure & Nesting Guidelines</summary>
+            <p>Always ensure tags are closed properly and nested logically  without visual overlapping. Never place block-level elements (such as div or p) inside inlinw elemments like span or a, Maintain lowercase tag names for consistency across build tools.</p>
+            <details>
+        </li>
+        <li>
+            <details>
+            <summary>Image Accessibility & Text Alternatives</summary>
+            <p>Every non-decorative image element must include a descriptive alt attribute explaining the visual content. Descriptive images should use empty string attributes (alt="") to instruct screen readers to bypass them silently.</p>
+            </details>
+        </li>
+        <li>
+            <details>
+            <summary>Table Structuring Standards</summary>
+            <p>Avoid using HTML tables for page layouts. Reserve table elements strictly for tabular data, and always include explicit header cells(th)with scope ="col" or scope="row" attributes to facilities assistive device navigation.</p>
+            </details>
+        </li>
+    </ol>
+        </section>
+        <hr>
+        <section>
+            <h2>Semantic Elements Comparison Matrix</h2>
+            <table>
+                <thread>
+                    <tr>
+                        <th scope="col">Tag</th>
+                        <th scope="col">Display Mode</th>
+                        <th scope="col">Primary Function</th>
+                        <th scope="col">Accessibility Role</th>
+                        <th scope="col">HTML5 status</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <tr>
+                        <th scope="row">&lt;header&gt;</th>
+                        <td>Block</td>
+                        <td>Introductory content, site titles, logos or global navigation</td>
+                        <td>Banner landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;nav&gt;</th>
+                        <td>Block</td>
+                        <td> Major navigation blocks such as menus and table-of-contents links</td>
+                        <td>Navigation landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;main&gt;</th>
+                        <td>Block</td>
+                        <td>The main content unique to the page</td>
+                        <td>Main landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;article&gt;</th>
+                        <td>Block</td>
+                        <td>Self-contained content such as blog posts or news stories</td>
+                        <td>Article landmark</td>
+                        <td>Standardized</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">&lt;section&gt;</th>
+                        <td>Block</td>
+                        <td>Highlight text for reference or relevance</td>
+                        <td>Generic inline text</td>
+                        <td>Standardized</td>
+                        </tr>
+                        </tbody>
+                        <tfooter>
+                            <tr>
+                                <td colspan="5">Summary: Semantic tags replace non-descriptive div containers for cleaner, more meaningful documents</td>
+                            </tr>
+                        </tfooter>
+                        </table>
+                        </section>
+                        <p><a href="page4.html">Proceed to Task 4: Complete Member Registration Form-></a></p>
+                        </main>
+                        <hr>
+                        <footer>
+                            <p>&copy; 2026 My Web Project. Page 3 of 4. </p>
+                        </footer>
+                    
+                </tbody>
+            </table>
+    </main>
+</body>
